@@ -26,9 +26,10 @@ using Microsoft.Data.SQLite;
 ... (codigo en wsp)
 
 En BOL, agregar clase: PersonaBOL.CS  
+
 public..{  
 prob (tab) (tab)  
-public string rut {get;set;}  
-public nnombre rut {get;set;}
+public string rut {get;set;}    
+public nombre rut {get;set;}  
 }
 
