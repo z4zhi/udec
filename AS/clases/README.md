@@ -1,7 +1,7 @@
 # Descargar
 c# para el ejemplo con RabbitMQ, por lo que si pueden 
-instalar https://visualstudio.microsoft.com/es/vs/community/ , y marcar las siguientes opciones:
--Desarrollo de asp.net y web
+instalar https://visualstudio.microsoft.com/es/vs/community/ , y marcar las siguientes opciones:  
+-Desarrollo de asp.net y web  
 -Desarrollo de escritorio de .net
 
 Además descargar RabbitMQ 
