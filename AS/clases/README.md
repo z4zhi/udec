@@ -11,7 +11,7 @@ para minimal api :)
 https://dotnet.microsoft.com/en-us/download/dotnet/7.0
 
 # Videos
-https://www.youtube.com/watch?v=7ukajubprdE
+https://www.youtube.com/watch?v=7ukajubprdE  
 https://www.youtube.com/watch?v=rWh7RtVJzhA
 
 RAbbitMQ
