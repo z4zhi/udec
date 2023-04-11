@@ -39,8 +39,9 @@ En DAL
 
 En BL, click derecho, agregar clase: PersonaBL.cs
 
-public..{  
-prob (tab) (tab)  
-public string rut {get;set;}    
-public nombre rut {get;set;}  
+public class PersonaBL{
+PersonaDAL personaDAL;
+public PersonaBL(){
+ personaDAL=new PersonaDAL();
+} 
 }
