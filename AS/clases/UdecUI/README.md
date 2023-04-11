@@ -50,3 +50,6 @@ try{
 personaDAL.guardaPersona(
 }  
 ... en wsp
+
+en pages  
+en index.cshtml
