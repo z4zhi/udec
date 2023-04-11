@@ -39,9 +39,14 @@ En DAL
 
 En BL, click derecho, agregar clase: PersonaBL.cs
 
-public class PersonaBL{
-PersonaDAL personaDAL;
-public PersonaBL(){
- personaDAL=new PersonaDAL();
-} 
+public class PersonaBL{  
+PersonaDAL personaDAL;  
+public PersonaBL(){  
+ personaDAL=new PersonaDAL();  
 }
+public bool guardaPersona(PersonaBOL persona){  
+if(persona.nombre.Contains(ñ)) return false;  
+try{ 
+personaDAL.guardaPersona(
+}  
+... en wsp
