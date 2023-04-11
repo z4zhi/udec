@@ -7,12 +7,13 @@ Aplicacion web de ASP.NET Core
 
 Biblioteca de clases  
  - Nombre: UdecBL
- 
 Biblioteca de clases  
  - Nombre: UdecDAL
- 
 Biblioteca de clases  
  - Nombre: UdecBOL
- 
+
 En UI, click derecho, agregar: Referencia del proyecto.
-- BL y BOL
+- BL, BOL
+En los otros:
+- BL -> DAL, BOL
+- DAL-> BD, BOL
