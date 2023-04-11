@@ -33,3 +33,6 @@ public string rut {get;set;}
 public nombre rut {get;set;}  
 }
 
+En DAL  
+ - public bool guardaPersona(PersonaBOL persona)
+ - persona.rut, persona.nombre
