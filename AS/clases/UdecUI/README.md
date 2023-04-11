@@ -6,11 +6,11 @@ Aplicacion web de ASP.NET Core
 
 En Solucion "UdecUI", click derecho, agregar: Nuevo Proyecto
 - Biblioteca de clases  
- - Nombre: UdecBL
+  - Nombre: UdecBL
 - Biblioteca de clases  
- - Nombre: UdecDAL
+  - Nombre: UdecDAL
 - Biblioteca de clases  
- - Nombre: UdecBOL
+  - Nombre: UdecBOL
 
 En UI, click derecho, agregar: Referencia del proyecto.
 - BL, BOL
