@@ -16,6 +16,7 @@ Biblioteca de clases
 
 En UI, click derecho, agregar: Referencia del proyecto.
 - BL, BOL
+
 En los otros:
 - BL -> DAL, BOL
 - DAL-> BD, BOL
