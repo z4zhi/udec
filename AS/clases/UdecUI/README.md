@@ -25,7 +25,7 @@ En PersonaDAL.cs
 using Microsoft.Data.SQLite;
 ... (codigo en wsp)
 
-En BOL, agregar clase: PersonaBOL.CS  
+En BOL, click derecho, agregar clase: PersonaBOL.CS  
 
 public..{  
 prob (tab) (tab)  
@@ -36,3 +36,11 @@ public nombre rut {get;set;}
 En DAL  
  - public bool guardaPersona(PersonaBOL persona)
  - persona.rut, persona.nombre
+
+En BL, click derecho, agregar clase: PersonaBL.cs
+
+public..{  
+prob (tab) (tab)  
+public string rut {get;set;}    
+public nombre rut {get;set;}  
+}
