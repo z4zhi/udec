@@ -19,5 +19,16 @@ En los otros:
 - BL -> DAL, BOL
 - DAL-> BD, BOL
 
-En DAL click derecho: Admin. de paquetes NuGet  
-SQLite (instalar)
+En DAL click derecho -> Admin. de paquetes NuGet -> SQLite (instalar)  
+En PersonaDAL.cs  
+
+using Microsoft.Data.SQLite;
+... (codigo en wsp)
+
+En BOL, agregar clase: PersonaBOL.CS  
+public..{  
+prob (tab) (tab)  
+public string rut {get;set;}  
+public nnombre rut {get;set;}
+}
+
