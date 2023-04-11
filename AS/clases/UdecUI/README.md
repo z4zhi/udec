@@ -13,3 +13,6 @@ Biblioteca de clases
  
 Biblioteca de clases  
  -Nombre: UdecBOL
+ 
+En UI, click derecho, agregar: Referencia del proyecto.  
+- BL y BOL
