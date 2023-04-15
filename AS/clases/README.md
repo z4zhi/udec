@@ -30,9 +30,7 @@ Ejemplos de requierimientos
 https://docs.google.com/document/d/1O7FUpnb2qaLdSqKgmriQnk7JxD-al8EO/edit?usp=share_link&ouid=111474457806516446725&rtpof=true&sd=true
 
 planillas para la evaluación 1. 
-
 https://drive.google.com/drive/folders/1S6rS_HqjgOPZnUE--y_fO5WXEGBF0ah9?usp=share_link
 
 material
-
 https://drive.google.com/drive/folders/1I0jp_8PH_F3G-Jz4IDNBUPg-1nCNDudg?usp=share_link
