@@ -142,6 +142,3 @@ namespace UdecBL
     }
 }
 
-en pages  
-en index.cshtml
-
