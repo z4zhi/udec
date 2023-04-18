@@ -54,6 +54,7 @@ namespace UdecDAL {
         }
         private SqliteConnection CreateConnection() {
             var pathDB = System.IO.Path.Combine(Environment.CurrentDirectory, "sqlite.db");
+            pathDB= @"C:\Users\dfeng2019\Downloads\UdecUI\sqlite.db";
             if (!System.IO.File.Exists(pathDB)) throw new Exception();
             var connection_string = String.Format("Data Source={0}", pathDB);
             SqliteConnection sqlite_conn;
