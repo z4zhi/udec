@@ -32,4 +32,4 @@ public nombre rut {get;set;}
 
 en solucion, agregar: nuevo proyecto.  
 ASP.NET Core vacio
- - nombre:
+ - nombre: UdecAPI
