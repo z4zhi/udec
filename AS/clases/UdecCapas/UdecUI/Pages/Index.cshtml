@@ -1,0 +1,36 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<form method="post" asp-route="Index">
+    <input type="text" name="tx_rut" required class="form-control" placeholder="ingrese rut" />
+
+    <br>
+    <input type="text" name="tx_nombre" required class="form-control" placeholder="ingrese nombre" />
+
+    <br>
+    <button type="submit">Guardar! </button>
+    <br />
+    @{
+        var lista = (List<PersonaBOL>)ViewData["lista"];
+    }
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Rut</th>
+                <th>Nombre</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in lista)
+            {
+                <tr>
+                    <td>@item.rut</td>
+                    <td>@item.nombre</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</form>
