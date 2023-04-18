@@ -42,3 +42,4 @@ en udecapi, agregar: referencia de proyecto
 en udecui, click derecho, poryecto de inicio multiple udeui y udecapi
 
 # ngrok
+ngrok http https
