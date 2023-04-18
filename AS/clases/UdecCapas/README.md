@@ -1,7 +1,7 @@
 Aplicacion web ASP.NET (.NET Framework)
 C# Web -> Aplicacion web ASP.NET (.NET Framework)
 #
-Aplicacion web de ASP.NET Core  
+# Aplicacion web de ASP.NET Core  
  - Nombre: UdecUI  
 
 En Solucion "UdecUI", click derecho, agregar: Nuevo Proyecto
@@ -41,4 +41,4 @@ en udecapi, agregar: referencia de proyecto
 
 en udecui, click derecho, poryecto de inicio multiple udeui y udecapi
 
-#ngrok
+# ngrok
