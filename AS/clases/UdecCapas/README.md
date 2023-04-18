@@ -20,70 +20,6 @@ En los otros:
 - DAL-> BD, BOL
 
 En DAL click derecho -> Admin. de paquetes NuGet -> SQLite (instalar)  
-En PersonaDAL.cs  
-
-using Microsoft.Data.Sqlite;
-using UdecBOL;
-
-namespace UdecDAL
-{
-    public class PersonaDAL
-    {
-        public PersonaDAL() {
-            CreateTable(CreateConnection());
-        }
-
-        public bool guardaPersona(PersonaBOL persona) { 
-        
-            try
-            {
-            var conn = CreateConnection();
-            SqliteCommand sqlite_cmd;
-            sqlite_cmd = conn.CreateCommand();
-            sqlite_cmd.CommandText = "INSERT INTO Personas " +
-                "(Rut, Nombre) VALUES('"+ persona.rut + "', '"+ persona.nombre +"');";
-            sqlite_cmd.ExecuteNonQuery();
-                return true;
-            }
-            catch (Exception)
-            {
-
-                return false;
-            }
-        }
-
-         void CreateTable(SqliteConnection conn)
-        {
-
-            SqliteCommand sqlite_cmd;
-            string Createsql = "CREATE TABLE IF NOT EXISTS Personas (Rut VARCHAR(20), Nombre VARCHAR(20))";
-            sqlite_cmd = conn.CreateCommand();
-            sqlite_cmd.CommandText = Createsql;
-            sqlite_cmd.ExecuteNonQuery();
-         
-
-        }
-
-        private   SqliteConnection CreateConnection()
-        {
-
-            SqliteConnection sqlite_conn;
-            // Create a new database connection:
-            sqlite_conn = new SqliteConnection("Data Source=database.db; Version = 3; New = True; Compress = True; ");
-         // Open the connection:
-         try
-            {
-                sqlite_conn.Open();
-            }
-            catch (Exception ex)
-            {
-
-            }
-            return sqlite_conn;
-        }
-
-    }
-}
 
 En BOL, click derecho, agregar clase: PersonaBOL.CS  
 
@@ -93,10 +29,7 @@ public string rut {get;set;}
 public nombre rut {get;set;}  
 }
 
-En DAL  
- - public bool guardaPersona(PersonaBOL persona)
- - persona.rut, persona.nombre
 
 en solucion, agregar: nuevo proyecto.  
-ASP.NET Core Web API
+ASP.NET Core vacio
  - nombre:
