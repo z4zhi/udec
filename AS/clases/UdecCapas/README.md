@@ -38,3 +38,5 @@ ASP.NET Core vacio
 en udecapi, agregar: referencia de proyecto
  - udecbl
  - udecbol
+
+en udecui, click derecho, poryecto de inicio multiple udeui y udecapi
