@@ -33,3 +33,8 @@ public nombre rut {get;set;}
 en solucion, agregar: nuevo proyecto.  
 ASP.NET Core vacio
  - nombre: UdecAPI
+ - .NET 7.0
+
+en udecapi, agregar: referencia de proyecto
+ - udecbl
+ - udecbol
