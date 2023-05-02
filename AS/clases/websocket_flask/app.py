@@ -16,7 +16,7 @@ app = Flask(__name__)
 jwt = JWTManager(app)
 app.config['JWT_SECRET_KEY'] = 'aassddaasdd123'
 app.config['JWT_ACCESS_TOKEN_EXPIRES'] = datetime.timedelta(days=1)
-uri = "mongodb+srv://gonpec:j4yj1lFv94OcCzdC@cluster0.dcycxpo.mongodb.net/?retryWrites=true&w=majority"
+uri = "mongodb+srv://dfeng2019:ZMpvmQUTqQjiYAGJ@cluster0.dcycxpo.mongodb.net/?retryWrites=true&w=majority"
 
 
 
@@ -29,16 +29,18 @@ client = MongoClient(uri, server_api=ServerApi('1'))
 db = client["demo"]
 users_collection = db["users"]
 
-
+# CTRL+K+C: COMENTAR, CTRL+K+U:DESCOMENTAR
+# ALT: CAMBIAR LINEAR
 @app.route("/api/v1/users", methods=["POST"])
 def register():
 	new_user = request.get_json() # store the json body request
 	new_user["password"] = hashlib.sha256(new_user["password"].encode("utf-8")).hexdigest() # encrpt password
 	doc = users_collection.find_one({"username": new_user["username"]}) # check if user exist
 	if not doc:
-		users_from_db = users_collection.find({})
-		total =len(list(users_from_db.clone()))
-		test(str(total))
+		# users_from_db = users_collection.find({})
+		# total =len(list(users_from_db.clone()))
+		# test(str(total))
+		users_collection.insert_one(new_user)
 		return jsonify({'msg': 'User created successfully'}), 201
 	else:
 		return jsonify({'msg': 'Username already exists'}), 409
