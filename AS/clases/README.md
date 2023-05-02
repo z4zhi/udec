@@ -10,7 +10,7 @@ para minimal api :)
 https://dotnet.microsoft.com/en-us/download/dotnet/7.0
 
 # Videos
-- <iframe width="560" height="315" src="https://www.youtube.com/embed/7ukajubprdE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7ukajubprdE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 - https://www.youtube.com/watch?v=rWh7RtVJzhA
 
 DuckDB
