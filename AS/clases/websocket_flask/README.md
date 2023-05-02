@@ -10,8 +10,8 @@ ZMpvmQUTqQjiYAGJ
 app.py
 
 # Postman
- - POST: URTL httt://.......
- - Body, raw
+ - POST: URTL http://127.0.0.1:5000/api/v1/users
+ - Body, raw, JSON
  - {"username": "udec",  
  "password":"123456"}
  - Send
