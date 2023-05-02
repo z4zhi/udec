@@ -5,6 +5,7 @@ ZMpvmQUTqQjiYAGJ
 - pip install flask  
 - pip install flask_jwt_extended
 - pip install pymongo
+- pip install websockets
 
 app.py
 
@@ -13,3 +14,4 @@ app.py
  - Body, raw
  - {"username": "udec",  
  "password":"123456"}
+ - Send
