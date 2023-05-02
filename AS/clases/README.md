@@ -15,12 +15,11 @@ https://dotnet.microsoft.com/en-us/download/dotnet/7.0
 
 RAbbitMQ
 - https://www.youtube.com/watch?v=jmxsswls0jk
-
 RabbitMQ (yo)
 - https://www.youtube.com/watch?v=4Qdh6D5JH_U
-
-
+Docker
 - https://www.youtube.com/watch?v=MIl-LJodYUU
+GraphQL vs REST
 - https://www.youtube.com/watch?v=PTfZcN20fro
 
 # Documentos
