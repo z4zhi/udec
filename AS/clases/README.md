@@ -19,6 +19,7 @@ RAbbitMQ
 RabbitMQ (yo)
 - https://www.youtube.com/watch?v=4Qdh6D5JH_U
 
+
 - https://www.youtube.com/watch?v=MIl-LJodYUU
 - https://www.youtube.com/watch?v=PTfZcN20fro
 
