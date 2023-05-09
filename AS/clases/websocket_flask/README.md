@@ -15,3 +15,10 @@ app.py
  - {"username": "udec",  
  "password":"123456"}
  - Send
+
+# en la otra clase
+ - python websocket.py
+## en postman 
+ - new-> weboscket request (beta)
+ - ws://localhost:8091
+ - hola mundo y connect
