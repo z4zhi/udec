@@ -33,6 +33,9 @@ Docker
 GraphQL vs REST
 - https://www.youtube.com/watch?v=PTfZcN20fro
 
+Descubre 20 aplicaciones que puedes instalar con DOCKER... ¡te encantarán!
+- https://www.youtube.com/watch?v=gqpJ7RE02Ao
+
 # Documentos
 https://medium.com/javarevisited/10-microservices-design-principles-every-developer-should-know-44f2f69e960f
 
