@@ -29,12 +29,10 @@ Docker
 - https://www.youtube.com/watch?v=NVvZNmfqg6M
 - https://www.youtube.com/watch?v=4Dko5W96WHg
 - https://www.youtube.com/watch?v=MIl-LJodYUU
+- https://www.youtube.com/watch?v=gqpJ7RE02Ao
 
 GraphQL vs REST
 - https://www.youtube.com/watch?v=PTfZcN20fro
-
-Descubre 20 aplicaciones que puedes instalar con DOCKER... ¡te encantarán!
-- https://www.youtube.com/watch?v=gqpJ7RE02Ao
 
 # Documentos
 https://medium.com/javarevisited/10-microservices-design-principles-every-developer-should-know-44f2f69e960f
@@ -53,4 +51,3 @@ https://drive.google.com/drive/folders/1S6rS_HqjgOPZnUE--y_fO5WXEGBF0ah9?usp=sha
 
 material
 https://drive.google.com/drive/folders/1I0jp_8PH_F3G-Jz4IDNBUPg-1nCNDudg?usp=share_link
-
