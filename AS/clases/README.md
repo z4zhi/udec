@@ -9,31 +9,6 @@ https://www.rabbitmq.com/download.html
 para minimal api :)
 https://dotnet.microsoft.com/en-us/download/dotnet/7.0
 
-# Videos
-- https://www.youtube.com/watch?v=7ukajubprdE
-- https://www.youtube.com/watch?v=rWh7RtVJzhA
-
-DuckDB
-- https://www.youtube.com/watch?v=AjsB6lM2-zw
-
-RAbbitMQ
-- https://www.youtube.com/watch?v=jmxsswls0jk
-
-RabbitMQ (yo)
-- https://www.youtube.com/watch?v=4Qdh6D5JH_U
-
-Edge Service y Balanceo de carga con HAProxy, Hashicorp Consul y NodeJS
-- https://www.youtube.com/watch?v=f_i8kuv6_mc
-
-Docker
-- https://www.youtube.com/watch?v=NVvZNmfqg6M
-- https://www.youtube.com/watch?v=4Dko5W96WHg
-- https://www.youtube.com/watch?v=MIl-LJodYUU
-- https://www.youtube.com/watch?v=gqpJ7RE02Ao
-
-GraphQL vs REST
-- https://www.youtube.com/watch?v=PTfZcN20fro
-
 # Documentos
 https://medium.com/javarevisited/10-microservices-design-principles-every-developer-should-know-44f2f69e960f
 
