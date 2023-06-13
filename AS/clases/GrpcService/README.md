@@ -9,5 +9,7 @@ UdecService.cs: wsp
 public class UdecService : Sumador.SumadorBase
 
 en GrpcService-> editar archivo de proyecto:  
-pegar un itemgroup de wsp, reemplaza el que tiene solo el greet
+pegar un itemgroup de wsp, reemplaza el que tiene solo el greet  
+
+run
 
