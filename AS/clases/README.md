@@ -10,8 +10,6 @@ para minimal api :)
 https://dotnet.microsoft.com/en-us/download/dotnet/7.0
 
 # Documentos
-https://medium.com/javarevisited/10-microservices-design-principles-every-developer-should-know-44f2f69e960f
-
 Caso Mobike
 https://docs.google.com/document/d/1nrXfKSwBFmkbUt2C_aE1DqpxaD--BAG9/edit?usp=share_link&ouid=111474457806516446725&rtpof=true&sd=true
 
