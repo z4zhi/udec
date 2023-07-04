@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package dbcomponent;
+
+service DBComponent {
+  rpc CreateVillano(VillanoRequest) returns (VillanoResponse) {}
+}
+
+message VillanoRequest {
+  string nombre_villano = 1;
+  string fecha_ingreso = 2;
+}
+
+message VillanoResponse {
+  string message = 1;
+}
