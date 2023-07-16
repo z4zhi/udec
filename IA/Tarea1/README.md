@@ -12,7 +12,7 @@ Código en C++ que implementa:
 
 ## Cosas a tener en cuenta
  - Para la búsqueda por costo uniforme y A*, no esta implementada la poda, es decir, si existe un camino hacia un nodo que tiene un costo menor en comparación con otro camino hacia ese mismo nodo, ambos caminos son expandidos, lo que es innecesario.
- - El programa ha sido probado y funciona en sistema operativo Windows (11).
+ - El programa ha sido probado y funciona en sistema operativo Windows (11) y compilador g++ 12.2.0.
 
 # Instrucciones 
 - Para compilar: $ g++ busquedas.cpp
