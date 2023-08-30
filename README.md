@@ -1,9 +1,9 @@
 # Trabajos/clases UdeC
- - AA: Analisis de algoritmos
- - AS: Arquitectura de software (2023-1) 
- - ED: Estructura de datos (2021-1)
- - EDAA: Estructura de datos y algoritmos avanzados (2023-2) 
- - IA: Inteligencia artificial (2023-1) 
- - ICP: Introducción a la Computación Paralela (2023-1) 
- - RC: Redes de computadores (2022)
- - SO: Sistemas operativos (2022)
+- **AA:** Análisis de Algoritmos
+- **AS:** Arquitectura de Software (2023-1)
+- **ED:** Estructura de Datos (2021-1)
+- **EDAA:** Estructura de Datos y Algoritmos Avanzados (2023-2)
+- **IA:** Inteligencia Artificial (2023-1)
+- **ICP:** Introducción a la Computación Paralela (2023-1)
+- **RC:** Redes de Computadores (2022)
+- **SO:** Sistemas Operativos (2022)
