@@ -205,7 +205,7 @@ list<Node *> insert(list<Node *> _head, int key)
 }
 
 // return pointer of minimum value Node present in the binomial heap
-// Buscar minimo
+// Buscar minimo recorriendo
 Node *getMin(list<Node *> _heap)
 {
 	list<Node *>::iterator it = _heap.begin();
@@ -272,27 +272,87 @@ void printHeap(list<Node *> _heap)
 }
 
 // Driver program to test above functions
-int main()
+int main(int argc, char *argv[])
 {
-	int ch, key;
-	list<Node *> _heap;
+	if (argc == 1)
+	{
+		int ch, key;
+		list<Node *> _heap;
 
-	// Insert data in the heap
-	_heap = insert(_heap, 10);
-	_heap = insert(_heap, 20);
-	_heap = insert(_heap, 30);
+		// Insert data in the heap
+		for (int i = 0; i < 5; i++)
+			_heap = insert(_heap, i);
+		cout << "Heap elements after insertion:\n";
+		printHeap(_heap);
 
-	cout << "Heap elements after insertion:\n";
-	printHeap(_heap);
+		Node *temp = getMin(_heap);
+		cout << "\nMinimum element of heap "
+			 << temp->data << "\n";
 
-	Node *temp = getMin(_heap);
-	cout << "\nMinimum element of heap "
-		 << temp->data << "\n";
+		// Delete minimum element of heap
+		_heap = extractMin(_heap);
+		cout << "Heap after deletion of minimum element\n";
+		printHeap(_heap);
+	}
+	else
+	{
+		const int reps = 40; // reps totales incluyendo cold runs
+		const int cold = 10; // cold runs, numero de iteraciones que no cuentan (menor a reps)
+		string s = "binomial.csv";
+		ofstream output(s);
+		output << "n,tInsert,vInsert,tRemove,vRemove,tUnion,vUnion \n";
 
-	// Delete minimum element of heap
-	_heap = extractMin(_heap);
-	cout << "Heap after deletion of minimum element\n";
-	printHeap(_heap);
+		const int N = 100000000;
+		for (int i = 100; i <= N; i *= 10)
+		{
+			list<Node *> heap1;
+			for (int k = 0; k < i; k++)
+				heap1 = insert(heap1, k);
+			vector<double> i_times, r_times, u_times;
+			for (int j = 0; j < reps; j++)
+			{
+				auto start = chrono::high_resolution_clock::now();
+				heap1 = insert(heap1, -1);
+				auto end = chrono::high_resolution_clock::now();
+				double i_time = chrono::duration_cast<chrono::nanoseconds>(end - start).count();
 
+				start = chrono::high_resolution_clock::now();
+				heap1 = extractMin(heap1);
+				end = chrono::high_resolution_clock::now();
+				double r_time = chrono::duration_cast<chrono::nanoseconds>(end - start).count();
+
+				start = chrono::high_resolution_clock::now();
+				list<Node *> merged = unionBionomialHeap(heap1, heap1);
+				end = chrono::high_resolution_clock::now();
+				double u_time = chrono::duration_cast<chrono::nanoseconds>(end - start).count();
+
+				if (j < cold)
+					continue;
+				i_times.push_back(i_time);
+				r_times.push_back(r_time);
+				u_times.push_back(u_time);
+			}
+			double avg_i_time = accumulate(i_times.begin(), i_times.end(), 0.0) / (reps - cold);
+			double var_i_time = 0.0;
+			for (double t : i_times)
+				var_i_time += pow(t - avg_i_time, 2);
+			var_i_time /= (reps - cold);
+
+			double avg_r_time = accumulate(r_times.begin(), r_times.end(), 0.0) / (reps - cold);
+			double var_r_time = 0.0;
+			for (double t : r_times)
+				var_r_time += pow(t - avg_r_time, 2);
+			var_r_time /= (reps - cold);
+
+			double avg_u_time = accumulate(u_times.begin(), u_times.end(), 0.0) / (reps - cold);
+			double var_u_time = 0.0;
+			for (double t : u_times)
+				var_u_time += pow(t - avg_u_time, 2);
+			var_u_time /= (reps - cold);
+
+			cout << i << "," << avg_i_time << "," << var_i_time << "," << avg_r_time << "," << var_r_time << "," << avg_u_time << "," << var_u_time << "\n";
+			output << i << "," << avg_i_time << "," << var_i_time << "," << avg_r_time << "," << var_r_time << "," << avg_u_time << "," << var_u_time << "\n";
+		}
+	}
 	return 0;
 }
