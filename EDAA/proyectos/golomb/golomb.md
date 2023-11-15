@@ -36,17 +36,17 @@ Codificar unariamente el cociente $q$, agregando $q$ unos seguidos de un cero al
 
 ### PASO 4: Calcular Codificación Binaria Truncada del Resto
 
-Calcular $k$, que es $\log_2(M)$
+#### Calcular $k$, que es $\log_2(M)$
 
 - $k = \log_2(4) = 2$
 
-![Paso 4.1](image-13.png)
-Calcular $c = 2^k - M$
+![Paso 4.1](image-11.png)
+#### Calcular $c = 2^k - M$
 
 - $c = 2^2 - 4 = 0$
 
-![Paso 4.2](image-13.png)
-Evaluar si $0 \leq r < c$, si es así, $r$ se trunca en $k-1$ bits; de lo contrario, $r + c$ se trunca en $k$ bits.
+![Paso 4.2](image-12.png)
+#### Evaluar si $0 \leq r < c$, si es así, $r$ se trunca en $k-1$ bits; de lo contrario, $r + c$ se trunca en $k$ bits.
 
 - $r = 2$, $c = 0$, y $r > c$, por lo que $r+c=2$ se trunca en $k=2$ bits, bit: `10`
 
