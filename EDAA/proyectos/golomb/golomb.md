@@ -2,9 +2,9 @@
 
 ## Definición del código
 
-A Golomb code is variable-length code, a bit like Huffman; however, rather than being based on the data, like Huffman, it's based on a simple model of the probability of the values (which are explicitly dealt with as natural numbers, rather than being abstract symbols): small values are more likely than big ones. The precise relation between size and probability is captured in a parameter, the divisor.
+El código Golomb es un código de longitud variable, similar a Huffman; sin embargo, en lugar de basarse en los datos, como Huffman, se basa en la probabilidad de los valores: los valores pequeños son más probables que los grandes. Esta relación se define mediante un parámetro conocido como el divisor.
 
-To Golomb-code a number, find the quotient and remainder of division by the divisor. Write the quotient in unary notation, then the remainder in truncated binary notation. In practice, you need a stop bit after the quotient: if the quotient is written as a sequence of zeroes, the stop bit is a one (or vice versa - and people do seem to prefer to write their unary numbers with ones, which is Wrong). The length of the remainder can be determined from the divisor.
+Para llevar a cabo la codificación, es necesario encontrar el cociente y el resto de la división del valor a codificar por el divisor. Luego, se representa el cociente en notación unaria, añadiendo un bit de parada al final. Si la codificación unaria utiliza 1s, el bit de parada es 0; en cambio, si se utiliza 0s, el bit de parada es 1. El resto se representa en notación binaria truncada, y su longitud puede determinarse a partir del divisor. Finalmente, la codificación unaria del cociente se suma a la codificación binaria truncada del resto para obtener la secuencia de salida.
 
 ## Ejemplo de aplicación
 
@@ -43,13 +43,17 @@ Calcular $k$, que es $\log_2(M)$
 - $k = \log_2(4) = 2$
 
 ![Paso 4.1](image-11.png)
+
 ####
+
 Calcular $c = 2^k - M$
 
 - $c = 2^2 - 4 = 0$
 
 ![Paso 4.2](image-12.png)
+
 ####
+
 Evaluar si $0 \leq r < c$, si es así, $r$ se trunca en $k-1$ bits; de lo contrario, $r + c$ se trunca en $k$ bits.
 
 - $r = 2$, $c = 0$, y $r > c$, por lo que $r+c=2$ se trunca en $k=2$ bits, bit: `10`
